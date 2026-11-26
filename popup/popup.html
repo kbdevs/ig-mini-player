@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IG Mini Player</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <img src="../icons/icon48.png" alt="IG Mini Player" class="logo">
+        <div>
+          <h1>IG Mini Player</h1>
+          <p class="subtitle">Automatic Picture-in-Picture for Instagram</p>
+        </div>
+      </div>
+      <span id="status-badge" class="badge badge-idle">Checking…</span>
+    </header>
+
+    <section class="action-card">
+      <div id="status-detail" class="status-detail">
+        Leave the tab or the browser while a Reel is playing and it pops out automatically.
+      </div>
+      <button id="setup-btn" class="primary-btn" type="button">
+        Allow automatic pop-out in Chrome
+      </button>
+      <button id="return-btn" class="primary-btn secondary" type="button" style="display: none;">
+        Return video to Instagram
+      </button>
+    </section>
+
+    <section class="settings-list">
+      <label class="setting-row">
+        <div class="setting-copy">
+          <span class="setting-title">Pop out when I switch tabs</span>
+          <span class="setting-desc">The video moves to the mini player when you leave the Instagram tab</span>
+        </div>
+        <input id="opt-auto-pip" type="checkbox" class="toggle">
+      </label>
+
+      <label class="setting-row">
+        <div class="setting-copy">
+          <span class="setting-title">Pop out when I leave the browser</span>
+          <span class="setting-desc">Also when you switch to another app or window</span>
+        </div>
+        <input id="opt-window-blur" type="checkbox" class="toggle">
+      </label>
+
+      <label class="setting-row">
+        <div class="setting-copy">
+          <span class="setting-title">Pop out muted videos too</span>
+          <span class="setting-desc">Chrome only pops out tabs that play sound, so a silent tone runs while a muted video plays</span>
+        </div>
+        <input id="opt-muted" type="checkbox" class="toggle">
+      </label>
+    </section>
+
+    <footer class="footer">
+      <div class="tip-box">
+        <strong>One-time setup:</strong> click the button above and set <strong>Automatic picture-in-picture</strong> to <strong>Allow</strong> for <code>instagram.com</code>. <kbd>Alt</kbd>+<kbd>P</kbd> opens the mini player by hand.
+      </div>
+      <div class="shortcuts">
+        <span><kbd>Scroll</kbd> / <kbd>↑</kbd><kbd>↓</kbd> Next/Prev</span>
+        <span><kbd>L</kbd> Like</span>
+        <span><kbd>C</kbd> Comments</span>
+        <span><kbd>S</kbd> Send</span>
+        <span><kbd>M</kbd> Mute</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

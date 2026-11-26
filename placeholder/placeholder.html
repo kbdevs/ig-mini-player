@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram · mini player</title>
+  <link rel="icon" href="../icons/icon48.png">
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #0b0b0d;
+      color: #f5f5f7;
+      font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 24px;
+      text-align: center;
+    }
+    svg { width: 44px; height: 44px; color: #a1a1aa; margin-bottom: 6px; }
+    h1 { margin: 0; font-size: 19px; font-weight: 650; letter-spacing: -0.01em; text-wrap: balance; }
+    p { margin: 0; max-width: 360px; color: #a1a1aa; text-wrap: pretty; }
+    button {
+      margin-top: 14px;
+      height: 38px;
+      padding: 0 18px;
+      border: 0;
+      border-radius: 999px;
+      background: #f5f5f7;
+      color: #0b0b0d;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.12s ease, opacity 0.12s ease;
+    }
+    button:hover { opacity: 0.9; }
+    button:active { transform: scale(0.97); }
+  </style>
+</head>
+<body>
+  <main>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/>
+      <rect x="12" y="11.5" width="7" height="5.5" rx="1.2" fill="currentColor" stroke="none"/>
+    </svg>
+    <h1 id="title">Playing in the mini player</h1>
+    <p id="detail">Instagram moved to the floating window when you left this window. It comes back here when you return.</p>
+    <button id="back" type="button">Back to Instagram</button>
+  </main>
+  <script src="placeholder.js"></script>
+</body>
+</html>
